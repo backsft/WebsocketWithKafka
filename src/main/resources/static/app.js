@@ -11,7 +11,7 @@ function onConnect() {
 }
 
 function onMessageReceived(payload) {
-    const message = JSON.parse(payload.body);
+    const message = payload.body;
     displayMessage(message);
 }
 
